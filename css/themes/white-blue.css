@@ -1,15 +1,26 @@
 /* Theme */
 
+:root{
+    --bg: #FAFAFA;
+    --color: #0277BD;
+    --theme-primary-color: #0277BD;
+}
+
 main {
-	background: #FAFAFA;
-	color: #0277BD;
+	background: var(--bg);
+	color: var(--color);
 }
 
 .icons-social a ,
 nav a{
-	color: #0277BD;
+	color: var(--color);
 }
 
 .icons-social a svg path{
-	fill: #0277BD;
+    fill: var(--bg);
+}
+
+nav a::before,
+nav a::after{
+    background: var(--theme-primary-color);
 }
