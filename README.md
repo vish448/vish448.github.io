@@ -8,9 +8,9 @@
   Vishang's Gatsby Portfolio Site
 </h1>
 
-This site is powered by gatsby.
-Data is sourced from Contentful headless CMS and Dev.to.
-The site is deployed on Netlify.
+This site is powered by Gatsby. <br/>
+Data is sourced from Contentful headless CMS and Dev.to.<br/>
+Deployed on Netlify.<br/>
 
 ## 🚀 About
 
@@ -20,13 +20,13 @@ The site is deployed on Netlify.
 
 2.  **STACK**
 
-    Gatsby
-    HTML, CSS, SASS, JSX
-    React
-    GraphQL
-    Contentful
-    Netlify
-    GIT
+    Gatsby<br/>
+    HTML, CSS, SASS, JSX<br/>
+    React<br/>
+    GraphQL<br/>
+    Contentful<br/>
+    Netlify<br/>
+    GIT<br/>
 
 ## 🧐 What's inside?
 
@@ -70,8 +70,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 💫 Deploy
-Site is deployed on Netlify
+## 💫 Deployed On Netlify
+
 [![Netlify](https://www.netlify.com/img/deploy/button.svg)](https://vishangsoniportfolio.netlify.com/)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
