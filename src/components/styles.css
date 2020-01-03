@@ -309,6 +309,36 @@ Global styles
       font-family: 'Open Sans', sans-serif;
       color: var(--heading-color);
   }
+
+  .skills,
+  .thisSite {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skills > div,
+  .thisSite > div {
+    margin-right: 40px;
+  }
+
+  @media only screen and (max-width: 656px) {
+    .skills,
+    .thisSite {
+      flex-direction: column;
+    }
+    .skills > div,
+    .thisSite > div {
+      margin-right: 0px;
+      justify-content: center;
+    }
+  }
+  .lightHouseScore {
+    margin: 0 auto;
+    margin-bottom:20px;
+  }
+  .gatsbyAstro{
+    width: 300px;
+    margin: 0 auto;
+  }
   
   .get-in-touch {
       display: flex;
