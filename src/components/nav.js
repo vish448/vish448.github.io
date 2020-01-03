@@ -26,6 +26,11 @@ const Nav = () => {
           </Link>
         </li>
         <li>
+          <Link className="navItem" activeClassName="activeNavItem" to="/about">
+            This Site
+          </Link>
+        </li>
+        <li>
           <Link className="navItem" activeClassName="activeNavItem" to="/contact">
             Contact
           </Link>
