@@ -6,14 +6,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = props => {
-  console.log(props.data.contentfulHome)
-  console.log(props.data.contentfulHome.title)
   const info = props.data.contentfulHome
   const title = props.data.contentfulHome.title
   const tagline = info.childContentfulHomeTaglineRichTextNode.content[0].content[0].value
   const description = info.childContentfulHomeDescriptionRichTextNode.content[0].content[0].value
-
-  console.log(tagline)
   return(
   <Layout>
 
@@ -21,6 +17,37 @@ const IndexPage = props => {
     <p className="page-title">{title}</p>
     <h1>{tagline}</h1>
     <p>{description}</p>
+    <h1>Skills Snapshot</h1>
+    <div className="skills">
+    <div className="fd">
+      <h2>Front End Development</h2>
+      <ul className="ul-vs">
+      {info.frontEndDev.map(skill=> <li key={skill}>{skill}</li>)}
+      </ul>
+    </div>
+    <div className="wf">
+      <h2>Prototype/Wireframe</h2>
+      <ul className="ul-vs">
+      {info.proto.map(skill => <li key={skill}>{skill}</li>)}
+      </ul>
+    </div>
+
+    <div className="vc">
+      <h2>Version Control</h2>
+      <ul className="ul-vs">
+      {info.versionControl.map(skill => <li key={skill}>{skill}</li>)}
+      </ul>
+    </div>
+
+    <div className="cd">
+      <h2>Continuous Deployment</h2>
+      <ul className="ul-vs">
+      {info.cd.map(skill => <li key={skill}>{skill}</li>)}
+      </ul>
+    </div>
+
+    </div>
+
     <ul className="get-in-touch ul-vs">
         <li>
           <Link className="navItem" activeClassName="activeNavItem" to="/contact">
@@ -58,6 +85,10 @@ export const query = graphql`
         }
       }
     }
+    frontEndDev
+    versionControl
+    proto
+    cd
   }
 }`
 
