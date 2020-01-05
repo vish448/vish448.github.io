@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
 
-const contact = props => {
+const contact = () => {
 
   return (
     <Layout>
@@ -11,7 +11,7 @@ const contact = props => {
       <title>Contat Me</title>
       <link rel="canonical" href="http://vishangsoni.com/services" />
     </Helmet>
-    <p class="page-title">Contact Me</p>
+    <p class="page-title">Contact Me <span role="img" aria-label="contact me">📇</span></p>
     <h1>I like to hear from you</h1>
     <p>If you have any question please do get in touch</p>
     <hr />
