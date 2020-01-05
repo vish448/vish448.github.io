@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useSiteMetadata } from '../hooks/use-site-metadata'
 
 const Nav = () => {
+  const { author } = useSiteMetadata()
   return (
     <nav>
       <ul className="ul-vs">
@@ -31,9 +33,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-          <Link className="navItem" activeClassName="activeNavItem" to="/contact">
-            Contact
-          </Link>
+         <a href={'mailto:'+ author.email+'?subject=Online enquiry&body=Hi Vishang,'}>Contact</a>
         </li>
       </ul>
     </nav>

@@ -12,7 +12,7 @@ const Footer = () => {
           author } = useSiteMetadata()
   return (
     <footer>
-      <div className="footer-top">{footerTopText} <a href={'mailto:'+ author.email}>{author.email}</a></div>
+      <div className="footer-top">{footerTopText} <a href={'mailto:'+ author.email+'?subject=Online enquiry&body=Hi Vishang,'}>{author.email}</a></div>
       <div className="footer-bottom ul-vs">
         <ul className="ul-vs">
 
