@@ -14,10 +14,15 @@ const IndexPage = props => {
   <Layout>
 
     <SEO title="Home" />
-    <p className="page-title">{title}</p>
+    <div className="home-top">
+    <p className="page-title">{title}<span role="img" aria-label="vishang">🙋‍♂️</span></p>
+    <a href="../../data/Vishang_Soni_Resume.docx" download><span role="img" aria-label="Resume">🎖</span>Resume</a>
+    </div>
+
     <h1>{tagline}</h1>
     <p>{description}</p>
-    <h1>Skills Snapshot</h1>
+    
+    <h1><span role="img" aria-label="Skills Snapshot">🚀</span> Skills Snapshot</h1>
     <div className="skills">
     <div className="fd">
       <h2>Front End Development</h2>

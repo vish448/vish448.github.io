@@ -273,6 +273,12 @@ Global styles
   
   
   /* Main Section*/
+
+  .home-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
   .subTitle {
       margin: 0;
