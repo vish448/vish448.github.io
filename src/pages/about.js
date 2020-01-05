@@ -18,7 +18,7 @@ const about = props => {
       <title>About | Vishang Soni</title>
       <link rel="canonical" href="http://vishangsoni.com/services" />
     </Helmet>
-    <p className="page-title">{title}</p>
+    <p className="page-title">{title} <span role="img" aria-label="page Title">🕹</span></p>
     <h1>{tagLine}</h1>
     <p>{description}
     </p>

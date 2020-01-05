@@ -13,7 +13,7 @@ module.exports = {
     author: 'Vishang Soni', // Author for schemaORGJSONLD
     authorEmail: 'vishangsoni@gmail.com',
     organization: 'Studio48',
-    footerTopText: 'I like to hear from you. if you have any business queries please drop a line at',
+    footerTopText: 'If you have any business queries please connect with me at',
   
     // siteFBAppID: '123456789', // Facebook App ID - Optional
     userTwitter: '@vishangsoni', // Twitter Username

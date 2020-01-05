@@ -18,7 +18,7 @@ const pageDescription = services.pageDescription.pageDescription
       <title>{pageTitle}</title>
       <link rel="canonical" href="http://vishangsoni.com/services" />
     </Helmet>
-    <p className="page-title">{pageTitle}</p>
+    <p className="page-title">{pageTitle} <span role="img" aria-label="page Title">💡</span></p>
     <h1>
       {pageTagLine}
     </h1>
