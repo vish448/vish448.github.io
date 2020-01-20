@@ -303,6 +303,7 @@ Global styles
       margin-bottom:100px;
       justify-content: flex-start;
       margin-left: 0;
+      padding-top: 90px;
     }
     .col {
       flex: unset;
@@ -388,7 +389,8 @@ Global styles
   @media only screen and (max-width: 656px) {
     .service {
       padding: 0;
-      max-width: none;
+      max-width: 410px;
+      min-width: 0;
     }
     .service h2 {
       font-size: 1.4rem;
@@ -406,14 +408,50 @@ Global styles
   }
   
   /* Portfolio section */
-  .project {
+  .tags {
+    margin-bottom: 50px;
+  }
+  .tags-container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+  }
+  .projects {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    float: left;
+  }
+
+  .projects-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+
+  .project:hover {
+    transform: scale(1.05);
   }
   
   .project div {
     margin-bottom: 20px;
+  }
+
+  .project h2{
+    text-transform: none;
   }
   
   .project .link {
@@ -425,6 +463,10 @@ Global styles
     .project {
       flex-direction: column;
       justify-content: center;
+      width: 100%;
+    }
+    .projects-container {
+      flex-direction: column;
     }
   }
   
@@ -434,6 +476,16 @@ Global styles
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid var(--primary-color);
+  }
+
+  @media only screen and (max-width: 656px) {
+    .article {
+     flex-direction: column;
+     align-items: flex-start;
+    }
+    .article h3{
+      margin-bottom: 0;
+    }
   }
   
   /*===========
@@ -448,6 +500,10 @@ Global styles
       header {
           background-color: var(--header-bg-color);
           padding: 1em;
+          position: fixed;
+          width: 100%;
+          z-index: 9999;
+          
       }
       .logo h1 {
           margin:0;

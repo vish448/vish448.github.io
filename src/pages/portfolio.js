@@ -11,7 +11,7 @@ const pageTitle = portfolio.pageTitle
 const pageTagLine = portfolio.pageTagLine
 const pageDescription = portfolio.pageDescription.pageDescription
   return (
-
+    
     <Layout>
     <Helmet>
       <meta charSet="utf-8" />
@@ -26,28 +26,25 @@ const pageDescription = portfolio.pageDescription.pageDescription
       {pageDescription}
     </p>
     <hr />
+    <a href="">
     <div className="projects">
         <div className="projects-container">
         {
           myPortfolio.map(item=> {
             return (
-              <div className="project" key={item.projectName}>
-                <div className="project-desc">
+                <div className="project" key={item.projectName}>
+                  <div className="project-thumbnail">
+                      <img src={item.projectThumbnail.file.url} alt="editingeverything" />
+                  </div>
                   <h2>{item.projectName}</h2>
-                  <p>
-                  {item.projectInfo.json.content[0].content[0].value}
-                  </p>
-                  <a href={item.projectLink.json.content[0].content[0].value} target="_blank" className="link" rel="noopener noreferrer">Learn more</a>
-                </div>
-                <div className="project-thumbnail">
-                    <img src={item.projectThumbnail.file.url} alt="editingeverything" />
-                </div>
-              </div>  
+                </div>  
             )
            })
-        } 
-        </div> 
+          }
+        </div>
+        
     </div>
+    </a> 
     </Layout>
   )
 }
@@ -77,6 +74,7 @@ query PortfolioPageQuery {
           url
         }
       }
+      projectTags
     }
   }
 }

@@ -5,7 +5,10 @@ import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 
+import { useSiteMetadata } from '../hooks/use-site-metadata'
+
 const IndexPage = props => {
+  const { author } = useSiteMetadata()
   const info = props.data.contentfulHome
   const title = props.data.contentfulHome.title
   const tagline = info.childContentfulHomeTaglineRichTextNode.content[0].content[0].value
@@ -55,9 +58,7 @@ const IndexPage = props => {
 
     <ul className="get-in-touch ul-vs">
         <li>
-          <Link className="navItem" activeClassName="activeNavItem" to="/contact">
-            Get In Touch
-          </Link>
+        <a href={'mailto:'+ author.email+'?subject=Online enquiry&body=Hi Vishang,'}>Contact</a>
         </li>
 
         <li>
