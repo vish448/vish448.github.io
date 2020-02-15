@@ -16,7 +16,10 @@ const about = props => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>About | Vishang Soni</title>
-      <link rel="canonical" href="http://vishangsoni.com/services" />
+      <meta name="description" content="A web developer with more than 5 years of experience working in different roles like Front end developer, Product Analyst and as a web developer in few different companies mainly categories for creating cloud based solutions, digital agencies and Publications. I have worked on few different technologies over the years but what keeps me going and love to work on Front end development. That's being said I am a quick learner. if something new comes to my way I would like to take that challenge as well." />
+      <meta name="keywords" content="About, vishang Soni, front end developer, web developer, product analyst" />
+    
+      <link rel="canonical" href="http://vishangsoni.com/about" />
     </Helmet>
     <p className="page-title">{title} <span role="img" aria-label="page Title">🕹</span></p>
     <h1>{tagLine}</h1>

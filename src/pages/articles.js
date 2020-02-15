@@ -17,7 +17,10 @@ const articlePageDescrtiption = articlePageHeder.pageDescription.pageDescription
     <Helmet>
       <meta charSet="utf-8" />
       <title>{articlePageTitle}</title>
-      <link rel="canonical" href="http://vishangsoni.com/services" />
+      <meta name="description" content="sometimes I write on my learnings and experiences during the projects on dev.to.  this page is sourced from dev.to . I am interested in writing on any front end resulted information." />
+      <meta name="keywords" content="Vishang Soni, blog, articles, interest" />
+    
+      <link rel="canonical" href="http://vishangsoni.com/articles" />
     </Helmet>
     <p class="page-title">{articlePageTitle} <span role="img" aria-label="page Title">🖌</span></p>
     <h1>{articlePageTagLine}</h1>

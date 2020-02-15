@@ -15,8 +15,11 @@ const pageDescription = portfolio.pageDescription.pageDescription
     <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>{pageTitle}</title>
-      <link rel="canonical" href="http://vishangsoni.com/services" />
+      <title>{pageTitle} | Vishang Soni</title>
+      <meta name="description" content="Vishang Soni worked on projects in Front end development to CMS integration. I'm also helping my clients maintain and update their existing WordPress blogs. I also help my clients creating WordPress websites for their business. vishang is experience in architecting information and convert the requirements into an application" />
+      <meta name="keywords" content="Vishang Soni, Wev Developer, Front End Developer, UI/UX Developer in Toronto Area" />
+    
+      <link rel="canonical" href="http://vishangsoni.com/portfolio" />
     </Helmet>
     <p className="page-title">{pageTitle}</p>
     <h1>

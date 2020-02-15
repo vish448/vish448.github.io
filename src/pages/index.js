@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
+import resume from "../../data/Vishang_Soni_Resume.pdf"
 
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
@@ -16,10 +17,15 @@ const IndexPage = props => {
   return(
   <Layout>
 
-    <SEO title="Home" />
-    <div className="home-top">
+    <SEO description="Web developer with experience in Front End and UI development. Also experienced in latest front end stack like React, Gatsby, GraphQL etc"
+         lang='en' 
+         meta="Vishang Soni, Front End Developer, UI/UX Development, Product Analyst"    
+         title="Home | Vishang Soni"    
+    />
+    
+         <div className="home-top">
     <p className="page-title">{title}<span role="img" aria-label="vishang">🙋‍♂️</span></p>
-    <a href="../../data/Vishang_Soni_Resume.docx" download><span role="img" aria-label="Resume">🎖</span>Resume</a>
+    <a href={resume} download><span role="img" aria-label="Resume">🎖</span>Resume</a>
     </div>
 
     <h1>{tagline}</h1>

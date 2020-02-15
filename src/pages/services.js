@@ -15,7 +15,9 @@ const pageDescription = services.pageDescription.pageDescription
     <Layout>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>{pageTitle}</title>
+      <title>{pageTitle} | Vishang Soni</title>
+      <meta name="description" content="Vishang Soni provides services in Front End Development, UI/UX design and Development also help in Information architecture." />
+      <meta name="keywords" content="Vishang Soni, Latest Stack Developer, Information Architecture, Web Developer, Front End Developer, Toronto Area" />
       <link rel="canonical" href="http://vishangsoni.com/services" />
     </Helmet>
     <p className="page-title">{pageTitle} <span role="img" aria-label="page Title">💡</span></p>
