@@ -10,7 +10,7 @@
 
 This site is powered by Gatsby. <br/>
 Data is sourced from Contentful headless CMS and Dev.to.<br/>
-Deployed on Netlify.<br/>
+Deployed on Netlify, Gatsby Cloud and Github Pages.<br/>
 
 ## 🚀 About
 
