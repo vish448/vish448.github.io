@@ -1,10 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 import resume from "../../data/Vishang_Soni_Resume.pdf"
+import Particles from 'react-particles-js'
+import Typed from 'react-typed'
 
 import { useSiteMetadata } from '../hooks/use-site-metadata'
 
@@ -16,15 +17,45 @@ const IndexPage = props => {
   const description = info.childContentfulHomeDescriptionRichTextNode.content[0].content[0].value
   return(
   <Layout>
+  <div id="particles">
+  <Particles
+        params={{
+          "particles": {
+              "number": {
+                  "value": 150,
+                  "density.enable" : true
+              },
+              "size": {
+                  "value": 3,
+                  random: true
+              },
+              "color": {
+                value: "#744b87"
+              },
 
+              "line_linked": {
+                enable: true,
+                color: "#E1CCEA"
+              }
+
+          },
+          "interactivity": {
+              "events": {
+                  "onhover": {
+                      "enable": true,
+                      "mode": "repulse"
+                  }
+              }
+          }
+      }} />
+      </div>
     <SEO description="Web developer with experience in Front End and UI development. Also experienced in latest front end stack like React, Gatsby, GraphQL etc"
          lang='en' 
-         meta="Vishang Soni, Front End Developer, UI/UX Development, Product Analyst"    
          title="Home | Vishang Soni"    
     />
     
-         <div className="home-top">
-    <p className="page-title">{title}<span role="img" aria-label="vishang">🙋‍♂️</span></p>
+    <div className="home-top">
+    <p className="page-title">Hi, I am <strong><Typed strings={['Vishang.','a Web Developer.','a UI/UX Developer.','a Product Analyst.']} typeSpeed={60} loop /></strong><span role="img" aria-label="vishang">🙋‍♂️</span></p>
     <a href={resume} download><span role="img" aria-label="Resume">🎖</span>Resume</a>
     </div>
 
@@ -103,5 +134,3 @@ export const query = graphql`
     cd
   }
 }`
-
-

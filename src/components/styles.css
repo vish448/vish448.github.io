@@ -126,6 +126,7 @@ Global styles
     position: absolute;
     left: 10px;
     z-index: 1;
+    top: 28px;
   }
   #menu-icon {
     width: 40px;
@@ -273,6 +274,12 @@ Global styles
   
   
   /* Main Section*/
+#particles canvas {
+  height: 80% !important;
+  position: absolute;
+  overflow-x: hidden;
+  width: inherit !important;
+}
 
   .home-top{
     display: flex;
@@ -307,6 +314,13 @@ Global styles
     }
     .col {
       flex: unset;
+    }
+
+    .home-top > a {
+      position: fixed;
+      right: 30px;
+      top: 28px;
+      z-index: 99999;
     }
   }
   
