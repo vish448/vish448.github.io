@@ -305,6 +305,9 @@ Global styles
   }
   
   @media only screen and (max-width: 656px) {
+    #particles canvas {
+      width: 100% !important;
+    }
     main {
       height: auto;
       margin-bottom:100px;
