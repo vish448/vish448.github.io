@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 
 const services = props => {
-console.log(props)
 const services = props.data.contentfulServicesPageHeader
 const myServices = props.data.allContentfulMyServices
 const pageTitle = services.pageTitle

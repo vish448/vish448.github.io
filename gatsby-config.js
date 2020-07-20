@@ -76,16 +76,16 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId:'aza7dz63euzt',
+        spaceId:process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken:'XyKtp6a-W4YczZOKga8fnuOctebru7pGl7Prgfg-9bg'
+        accessToken:process.env.CONTENTFUL_ACCESS_TOKEN
       },
     },
 
     {
       resolve: `gatsby-source-dev`,
       options: {
-        username:'vish448'
+        username:`vish448`
       }
     },
 

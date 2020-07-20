@@ -6,7 +6,7 @@ module.exports = {
     siteTitleAlt2: 'Product Analyst',
     siteTitleAlt3: 'UI/UX Developer',
     siteTitleShort: 'Vishang Soni Portfolio', // short_name for manifest
-    siteUrl: 'https://your-site.io', // Domain of your site. No trailing slash!
+    siteUrl: 'https://vish448.github.io', // Domain of your site. No trailing slash!
     siteLanguage: 'en', // Language Tag on <html> element
     siteLogo: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
     siteDescription: 'Vishang Soni`s Portfolio in Gatsby',

@@ -2,7 +2,8 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 //import Image from "../components/image"
-import SEO from "../components/seo"
+//import SEO from "../components/seo"
+import { Helmet } from 'react-helmet'
 import resume from "../../data/Vishang_Soni_Resume.pdf"
 import Particles from 'react-particles-js'
 import Typed from 'react-typed'
@@ -12,7 +13,7 @@ import { useSiteMetadata } from '../hooks/use-site-metadata'
 const IndexPage = props => {
   const { author } = useSiteMetadata()
   const info = props.data.contentfulHome
-  const title = props.data.contentfulHome.title
+  //const title = props.data.contentfulHome.title
   const tagline = info.childContentfulHomeTaglineRichTextNode.content[0].content[0].value
   const description = info.childContentfulHomeDescriptionRichTextNode.content[0].content[0].value
   return(
@@ -49,10 +50,13 @@ const IndexPage = props => {
           }
       }} />
       </div>
-    <SEO description="Web developer with experience in Front End and UI development. Also experienced in latest front end stack like React, Gatsby, GraphQL etc"
-         lang='en' 
-         title="Home | Vishang Soni"    
-    />
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>"Home | Vishang Soni"</title>
+      <meta name="description" content="Web developer with experience in Front End and UI development. Also experienced in latest front end stack like React, Gatsby, GraphQL etc" />
+      <meta name="keywords" content="Vishang Soni, Latest Stack Developer, Information Architecture, Web Developer, Front End Developer, Toronto Area" />
+      <link rel="canonical" href="http://vish448.github.io/" />
+    </Helmet>
     
     <div className="home-top">
     <p className="page-title">Hi, I am <strong><Typed strings={['Vishang.','a Web Developer.','a UI/UX Developer.','a Product Analyst.']} typeSpeed={60} loop /></strong><span role="img" aria-label="vishang">🙋‍♂️</span></p>

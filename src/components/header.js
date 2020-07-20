@@ -13,15 +13,15 @@ const Header = () => {
   return (
   <header>
     <div className="logo">
-      <Link
+      <h1><Link
           to="/"
           style={{
             color: `black`,
             textDecoration: `none`,
           }}
         > 
-          <h1>{siteTitle}</h1>
-        </Link>
+          {siteTitle}       
+        </Link></h1>
           
         <div className="subTitle">
             <ul>

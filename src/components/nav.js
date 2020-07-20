@@ -33,7 +33,7 @@ const Nav = () => {
           </Link>
         </li>
         <li>
-         <a href={'mailto:'+ author.email+'?subject=Online enquiry&body=Hi Vishang,'}>Contact</a>
+         <a href={'mailto:'+ author.email+'?subject=Online%20enquiry&body=Hi%20Vishang,'}>Contact</a>
         </li>
       </ul>
     </nav>
