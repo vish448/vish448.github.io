@@ -22,17 +22,17 @@ const articlePageDescrtiption = articlePageHeder.pageDescription.pageDescription
     
       <link rel="canonical" href="http://vishangsoni.com/articles" />
     </Helmet>
-    <p class="page-title">{articlePageTitle} <span role="img" aria-label="page Title">🖌</span></p>
+    <p className="page-title">{articlePageTitle} <span role="img" aria-label="page Title">🖌</span></p>
     <h1>{articlePageTagLine}</h1>
     <p>{articlePageDescrtiption}</p>
     <hr />
     {
         articles.map(article=> {
             return (
-                <div class="articles">
-                    <a class="article" href={article.article.url}>
-                        <h3 class="article-title">{article.article.title}</h3>
-                        <p class="article-data">{article.article.published_at}</p>
+                <div className="articles">
+                    <a className="article" href={article.article.url}>
+                        <h3 className="article-title">{article.article.title}</h3>
+                        <p className="article-data">{article.article.published_at}</p>
                     </a>
                  </div>
             )
@@ -45,7 +45,7 @@ export default articles
 
 export const query = graphql`
 query ArticlePageQuery {
-    allDevArticles {
+  allDevArticles {
     nodes {
       article {
         title

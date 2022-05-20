@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
 
+
+
 import { graphql } from 'gatsby'
 
 const portfolio = props => {
@@ -29,25 +31,29 @@ const pageDescription = portfolio.pageDescription.pageDescription
       {pageDescription}
     </p>
     <hr />
-    <a href="">
+   
     <div className="projects">
         <div className="projects-container">
         {
+          
           myPortfolio.map(item=> {
+            console.log(item)
             return (
+                
                 <div className="project" key={item.projectName}>
+                <a href={item.pLink} target="_blank" rel="noreferrer">
                   <div className="project-thumbnail">
-                      <img src={item.projectThumbnail.file.url} alt="editingeverything" />
+                      <img src={item.projectThumbnail.file.url} alt={item.projectName} />
                   </div>
                   <h2>{item.projectName}</h2>
-                </div>  
+                </a>
+                </div>
+                
             )
            })
           }
         </div>
-        
     </div>
-    </a> 
     </Layout>
   )
 }
@@ -69,15 +75,26 @@ query PortfolioPageQuery {
       projectInfo {
         json
       }
-      projectLink {
-        json
-      }
+      pLink   
       projectThumbnail {
         file {
           url
         }
       }
       projectTags
+    }
+  }
+  allContentfulMyPortfolioProjectLinkRichTextNode {
+    edges {
+      node {
+        content {
+          content {
+            content {
+              value
+            }
+          }
+        }
+      }
     }
   }
 }
